@@ -16,4 +16,13 @@ UsersRouter.post("/users", async (req,res) => {
     }
 });
 
+UsersRouter.post("/users", async (req,res) => {
+    try {
+      
+    res.status(200).json("holaaaa")
+    } catch (error) {
+        res.status(400).send({ error: error.message });
+    }
+});
+
 module.exports =  UsersRouter;
