@@ -16,7 +16,7 @@ UsersRouter.post("/users", async (req,res) => {
     }
 });
 
-UsersRouter.post("/users", async (req,res) => {
+UsersRouter.get("/userss", async (req,res) => {
     try {
       
     res.status(200).json("holaaaa")
